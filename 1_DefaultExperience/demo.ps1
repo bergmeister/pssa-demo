@@ -46,5 +46,10 @@ if ($a = $b) {
 }
 
 # PSUseDeclaredVarsMoreThanAssignments: exclude by pointing VS-Code settings to different PSSA settings file
+# https://learn.microsoft.com/en-us/powershell/utility-modules/psscriptanalyzer/using-scriptanalyzer?view=ps-modules#settings-support-in-scriptanalyzer
 $f = 4
 # Get-Something $f
+
+# add cd to allowlist via docs:
+# https://learn.microsoft.com/en-us/powershell/utility-modules/psscriptanalyzer/rules/avoidusingcmdletaliases?view=ps-modules
+cd $HOME
