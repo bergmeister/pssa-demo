@@ -50,14 +50,14 @@ foo |
 bar |
 baz
 
-# whitespaceInsideBrace
-foo | ForEach-Object {bar}
-
-# whitespaceAroundPipe
-foo|bar
+# whitespaceInsideBrace, whitespaceAroundPipe, whitespaceBetweenParameters
+foo|ForEach-Object    -Scriptblock {bar}
 
 # useCorrectCasing
 get-childitem
+
+# alias expansion
+gci
 
 # Setting support: https://github.com/PowerShell/PSScriptAnalyzer#settings-support-in-scriptanalyzer
 # -> enable setting: "powershell.scriptAnalysis.settingsPath": "PSScriptAnalyzerSettings.psd1",
