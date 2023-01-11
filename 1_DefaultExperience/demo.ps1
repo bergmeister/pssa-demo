@@ -1,3 +1,12 @@
+# Tab Completion for Splatting (new feature only in preview extension atm)
+$params = @{
+        Path    = $PSHOME
+        Recurse = $true
+
+}
+Get-ChildItem @params
+
+
 ## Formatting (shortcut on Windwos: Ctrl + K + F)
 
 # powershell.codeFormatting.preset: https://github.com/PoshCode/PowerShellPracticeAndStyle/issues/81
