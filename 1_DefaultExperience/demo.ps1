@@ -40,10 +40,11 @@ if ($a > $b) {
 }
 
 # PSPossibleIncorrectUsageOAssignmentOperator (not on by default)
+# --> just add PSScriptAnalyzerSettings with @{} as content to enable all
 if ($a = $b) {
 
 }
 
-# PSUseDeclaredVarsMoreThanAssignments: limited to scriptblock scope
+# PSUseDeclaredVarsMoreThanAssignments: exclude by pointing VS-Code settings to different PSSA settings file
 $f = 4
 # Get-Something $f
