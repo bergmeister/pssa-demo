@@ -1,4 +1,4 @@
-# Tab Completion for Splatting (new feature only in preview extension atm)
+## Tab Completion for Splatting (new feature only in preview extension atm)
 $params = @{
         Path    = $PSHOME
         Recurse = $true
@@ -32,8 +32,6 @@ gci
 
 ## Code Analysis
 
-# Auto-Fix
-gci
 
 # Suppression
 function Get-foo {
